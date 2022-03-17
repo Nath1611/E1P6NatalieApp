@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E1P6NatalieApp.Views.ActivoRegisterPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />-->
+
+            <Entry x:Name="TxtNombreAtivo" Placeholder="Nombre" FontSize="Large" TextColor="Gray"/>
+            <Entry x:Name="TxtNumeroSerie" Placeholder="Serie" FontSize="Large" TextColor="Gray"/>
+            <Entry x:Name="TxtCosto" Placeholder="Costo" FontSize="Large" TextColor="Gray"/>
+            <Entry x:Name="TxtDescripcion" Placeholder="Descripcion" FontSize="Large" TextColor="Gray"/>
+            <Entry x:Name="TxtResponsable" Placeholder="Responsable" FontSize="Large" TextColor="Gray"/>
+            <Entry x:Name="TxtFechaRegistro" Placeholder="FechaRegistro" FontSize="Large" TextColor="Gray"/>
+            <Entry x:Name="TxtEstado" Placeholder="Estado" FontSize="Large" TextColor="Gray"/>
+
+            <Entry x:Name="TxtUserName" Placeholder="User" FontSize="Large" TextColor="Gray"/>
+            <StackLayout Orientation="Horizontal" Spacing="10" Padding="0,0,20,0">
+                <Entry x:Name="TxtUserPassword" WidthRequest="330" Placeholder="UserPassword" FontSize="Large" TextColor="Gray"/>
+                <Switch IsToggled="false"/>
+            </StackLayout>
+
+            <FlexLayout AlignContent="Center">
+                <StackLayout IsClippedToBounds="True" Padding="0,200,0,0" Orientation="Horizontal" HorizontalOptions="End" Spacing="20">
+                    <Button Text="Ingresar" WidthRequest="180" Padding="10,0,10,0"/>
+                    <Button Text="Cancelar" WidthRequest="180" Padding="10,0,10,0"/>
+                </StackLayout>
+            </FlexLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
